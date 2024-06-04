@@ -1,0 +1,230 @@
+﻿
+html,body{
+    direction:rtl;
+}
+.QuickLinks ul li a::after {
+    content: '|';
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    float: left;
+    height: 550px;
+    margin: 6px;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.img-w {
+    height: 300px;
+    overflow: hidden;
+}
+
+p.description {
+    height: 65px;
+}
+
+.bar::before {
+    content: 'חנות הצעצועים שלי';
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 8px;
+/*    background-image: linear-gradient(to right, #0052cc, #007bff, #273c75, #5c5aa2, #5f27cd);  Blue gradient*/ 
+    background-image: linear-gradient(to right, #3498db, #2980b9, #21618c);  Gradient: Light blue to dark blue 
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+    .card button:hover {
+        transform: scale(1.05);
+    }
+
+.bar {
+    background-color: #0056b3; /* Dark blue */
+    height: 70px; /* Increase height for better visibility */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Add horizontal padding for content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 18px; /* Increase font size */
+}
+
+#ItemsCountText {
+/*    display: inline-block;
+*/    color: white;
+/*    padding: 5px 10px;
+*//**//*    border-radius: 50%;
+*/    font-size: 16px;
+    left:0%;
+/*    min-width: 24px;
+*/}
+
+.Icon {
+    background-image: url(../Images/BagActive.png);
+    background-repeat: no-repeat;
+    padding: 9px 2px 2px 2px;
+    color: #4f8855;
+    float: right;
+    margin: 1px 0 0 0;
+    width: 24px;
+    height: 21px;
+}
+
+.BagSummary .Icon .ItemCount {
+    overflow: hidden;
+    height: 16px;
+}
+
+    .BagSummary .Icon .ItemCount span {
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-size: 100%;
+        margin-top: -1px;
+    }
+
+.goToCart {
+    background: #1a6461;
+    font-size: 11px;
+    color: #fff;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    border: 0;
+    text-transform: uppercase;
+    font-family: 'azo-sans', sans-serif;
+    border-radius: 8px;
+    display: inline-block;
+    float: right;
+    margin: 4px;
+    transition: background-color 0.3s ease;
+}
+
+    .goToCart:hover {
+        background-color: #155d52;
+    }
+
+.addedToBagDialogue::before {
+    background-color: #fff;
+    box-shadow: 2px -2px 2px rgba(0, 0, 0, 0.2);
+    content: " ";
+    display: block;
+    height: 15px;
+    left: 60px;
+    position: absolute;
+    top: -7px;
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 15px;
+    z-index: 4999;
+}
+
+.QuickLinks ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 14px; /* Increase font size for better visibility */
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.QuickLinks ul li {
+    float: right;
+}
+
+.Filters {
+    position: absolute;
+    width: 200px; /* Increase width for better usability */
+    float: right;
+    margin: 4px 4px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    z-index: 102;
+    background-color: rgb(249, 249, 249);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    min-height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nameFilter input {
+    width: 80%; /* Increase width */
+    height: 24px;
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid #007bff;
+}
+
+.filterBreak {
+    padding-top: 10vh;
+}
+
+.priceInputText {
+    background-color: #fff;
+    height: 31px;
+    padding: 3px 7px;
+    line-height: normal;
+    width: 50px;
+    border: 1px solid #888C8C;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgb(15 17 17 / 15%) inset;
+    outline: 0;
+}
+
+.priceCurrency {
+    position: absolute;
+    margin-top: 6.5px;
+    line-height: 22px;
+    font-size: 25px;
+    margin-left: -19px;
+    color: #007bff;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+    .pagination a {
+        color: black;
+        float: right;
+        padding: 8px 16px;
+        text-decoration: none;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .pagination a.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
