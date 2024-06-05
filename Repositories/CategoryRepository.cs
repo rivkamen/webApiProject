@@ -1,7 +1,7 @@
 ﻿//using Microsoft.EntityFrameworkCore;
 //using System.Text.Json;
 //namespace Repositories
-   
+
 //{
 //    public class UserRepository : IUserRepository
 //    {
@@ -62,9 +62,51 @@
 //            }
 
 
-           
+
 //        }
 
-        
+
 //    }
 //}
+
+
+using DTOs;
+using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
+
+namespace Repositories
+
+{
+    public class CategoryRepository : ICategoryRepository
+    {
+        private MyStore_325950947Context _picturesStoreContext;
+        public CategoryRepository(MyStore_325950947Context picturesStoreContext)
+        {
+            _picturesStoreContext = picturesStoreContext;
+        }
+
+
+        public Task<User> addCategory(User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<List<Category>> getCategories()
+        {
+            var foundCategories = await _picturesStoreContext.Categories.ToListAsync();
+            if (foundCategories == null)
+                return null;
+            return foundCategories;
+        }
+
+        public Task<CategoryDto> getCategoryById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Category> updateCategory(int id, User userToUpdate)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

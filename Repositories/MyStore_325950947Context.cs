@@ -85,6 +85,10 @@ public partial class MyStore_325950947Context : DbContext
                 .HasMaxLength(100)
                 .IsFixedLength()
                 .HasColumnName("DESCRIPTION");
+            entity.Property(e => e.Image_Url)
+               .HasMaxLength(100)
+               .IsFixedLength()
+               .HasColumnName("IMAGE_URL");
             entity.Property(e => e.Price).HasColumnName("PRICE");
             entity.Property(e => e.ProductName)
                 .HasMaxLength(40)

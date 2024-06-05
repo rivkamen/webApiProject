@@ -14,5 +14,5 @@ public partial class ProductDto
     public int CategoryId { get; set; }
 
     public string? Description { get; set; }
-
+    public string? Image_Url { get; set; }
 }

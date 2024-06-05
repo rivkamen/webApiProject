@@ -13,9 +13,9 @@ builder.Services.AddTransient<IOrderService, OrderService>();
 builder.Services.AddTransient<IOrderRepository, OrderRepository>();
 
 
-//builder.Services.AddTransient<IOrderService, Services.>();
-//builder.Services.AddTransient<ICategoryService, CategoryService>();
-//builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
+//builder.Services.AddTransient < IOrderService, Services.> ();
+builder.Services.AddTransient<ICategoryService, CategoryService>();
+builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 builder.Services.AddControllers();
 builder.Services.AddDbContext<MyStore_325950947Context>(option => option.UseSqlServer("Data Source=srv2\\PUPILS;Initial Catalog=MyStore_325950947;Trusted_Connection=True;TrustServerCertificate=True"));
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
